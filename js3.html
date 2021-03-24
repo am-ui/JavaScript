@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Arrays!!!</title>
+	<script type="text/javascript">
+		var person = new Array("Amit", "Kumar", "Pathak", "Gaurav", "Himanshu");
+		Array.prototype.displayItems=function(){
+			for (i=0;i<this.length;i++){
+				document.write(this[i] + "<br />");
+			}
+		}	
+		document.write("person array<br />");
+		person.displayItems();
+		document.write("<br />The number of items in students array is " + person.length + "<br />");
+		document.write("<br />The SORTED person array<br />");
+		person.sort();
+		person.displayItems();
+		document.write("<br />The REVERSED person array<br />");
+		person.reverse();
+		person.displayItems();
+		document.write("<br />THE person array after REMOVING the LAST item<br />");
+		person.pop();
+		person.displayItems();
+        document.write("<br />THE person array after PUSH<br />");
+        person.push("New Stuff");
+		person.displayItems();
+	</script>
+</head>
+<body>
+</body>
+</html>
