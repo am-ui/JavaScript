@@ -1,0 +1,18 @@
+//getAtribute()
+
+const first = document.querySelector('.first');
+const idValue = first.getAttribute('id');
+console.log(idValue);
+
+const link  = document.getElementById('link');
+const showLink = link.getAttribute('href');
+console.log(showLink);
+
+const last = link.nextElementSibling;
+last.setAttribute('class', 'first');
+last.textContent = 'i also jave a class of first';
+console.log(last);
+
+
+//const link = document.querySelectorAll('.first');
+//console.log(link);
